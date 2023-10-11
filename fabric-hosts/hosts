@@ -1,0 +1,17 @@
+127.0.0.1	localhost
+127.0.1.1	ubuntu
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+# 127.0.0.1 orderer.example.com
+# 127.0.0.1 peer0.org1.example.com
+# 127.0.0.1 peer1.org1.example.com
+# 127.0.0.1 orderer2.example.com
+# 127.0.0.1 peer0.org2.example.com
+# 127.0.0.1 peer1.org2.example.com
+
