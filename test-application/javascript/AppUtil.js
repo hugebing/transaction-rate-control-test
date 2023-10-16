@@ -11,7 +11,7 @@ const path = require('path');
 
 exports.buildCCPOrg1 = (GRPC) => {
 	// load the common connection configuration file
-	const ccpPath = path.resolve(__dirname, '..', '..', '..', 'fabric-3hosts', 'organizations', 'peerOrganizations', 'org1.example.com', 'connection-org1-' + GRPC + '.json');
+	const ccpPath = path.resolve(__dirname, '..',  '..', 'fabric-hosts', 'organizations', 'peerOrganizations', 'org1.example.com', 'connection-org1-' + GRPC + '.json');
 	const fileExists = fs.existsSync(ccpPath);
 	if (!fileExists) {
 		throw new Error(`no such file or directory: ${ccpPath}`);

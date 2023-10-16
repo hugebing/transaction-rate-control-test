@@ -8,12 +8,12 @@ function restartFabric() {
     bash host2up.sh
     bash smallbank.sh
     cd ../
+    export numAccount=10000
     export folderName="$(date +"%Y-%m-%d-%H:%M:%S")_createAccount_numAccount=$numAccount"
     cd data
     mkdir $folderName
     cd ..
-    export numAccount=10000
-    node smallbank_createAccount.js 
+    node smallbank-createAccount.js
     sleep 3
 }
 
